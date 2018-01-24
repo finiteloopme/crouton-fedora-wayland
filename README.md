@@ -66,6 +66,10 @@ Installation
 1. Developer unlock your chromebook
 2. Open crosh shell
 
+``` bash
+sudo curl https://raw.githubusercontent.com/finiteloopme/crouton-fedora-wayland/master/install-fedora.sh | sh
+```
+
 ```
 cd ~/Downloads
 wget https://github.com/nmilosev/crouton-fedora-wayland/archive/master.tar.gz -O crouton-fedora-wayland.tar.gz
@@ -90,6 +94,12 @@ Please consult the offical Crouton documentation for this.
 
 With this paramter, you can also install Crouton Fedora onto your sd card or your USB drive. Just please
 remember, that performace will be greatly reduced if your SD card/USB drive is slow.
+
+# Uninstall/delete Fedora
+
+``` bash
+sudo delete-chroot -c /usr/local/crouton-fedora fedora
+```
 
 Wayland
 ---
